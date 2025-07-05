@@ -1,0 +1,243 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI';
+  background: #fafafa;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  background:linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('robert-bye-BY34glOW7wA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI';
+}
+
+
+
+header {
+  background: #fff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-weight: 700;
+  color: #4caf50;  
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #4caf50;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* space between ul and button */
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  
+  color: #555;
+}
+
+#theme-toggle:hover {
+  color: #4caf50;
+}
+
+
+main {
+  flex: 1;
+  padding: 40px 20px;
+  max-width: 100 vw;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+/* main{
+  background-image: url('bg\ img.jpg');
+} */
+
+
+.main h2 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.main p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  
+}
+
+.btn:hover {
+  background-color: #388e3c;
+}
+
+.about, .features {
+  margin-top: 50px;
+  /* text-align: center; */
+  align-items: center;
+  
+}
+.main{
+   display: flex;
+  flex-direction: column;
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-content:center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+.about h3, .features h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  max-width: 600px;
+  
+}
+
+.features ul {
+  list-style: disc inside;
+  color: #444;
+  font-size: 1rem;
+  max-width: 600px;
+
+}
+
+
+.features ul li {
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+footer {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+  
+}
+/* Dark theme fixes for gradient and text contrast */
+
+body.dark-theme {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+              url('robert-bye-BY34glOW7wA-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #e0e0e0;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+  background-color: rgba(20, 20, 20, 0.9);
+  color: #e0e0e0;
+}
+
+body.dark-theme nav ul li a {
+  color: #ccc;
+}
+
+body.dark-theme nav ul li a:hover {
+  color: #90ee90;
+}
+
+body.dark-theme .btn {
+  background-color: #2e7d32;
+  color: white;
+}
+
+body.dark-theme .btn:hover {
+  background-color: #1b5e20;
+}
+
+body.dark-theme .about p,
+body.dark-theme .features ul {
+  color: #ccc;
+}
+
+body.dark-theme .features ul li {
+  text-align: center;
+}
+
+body.dark-theme .form,
+body.dark-theme input,
+body.dark-theme select,
+body.dark-theme button {
+  background-color: #222;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+body.dark-theme input::placeholder {
+  color: #aaa;
+}
