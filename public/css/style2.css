@@ -31,16 +31,16 @@ header {
   align-items: center;
 }
 
+header h1 {
+  font-weight: 700;
+  color: #4caf50;  
+}
 nav ul {
   list-style: none;
   display: flex;
   gap: 25px;
 }
 
-header h1 {
-  font-weight: 700;
-  color: #4caf50;  
-}
 
 nav ul li a:hover {
   color: #4caf50;
