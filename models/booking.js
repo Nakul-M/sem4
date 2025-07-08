@@ -1,11 +1,11 @@
 const mongoose = require('mongoose');
 
-const { Schema } = mongoose;
+const { schema } = mongoose;
 
 
 //  User Schema
 const bookingSchema = new mongoose.Schema({
- user:  String,
+ user:  string ,
   name: String,
   email: String,
   date: String,
